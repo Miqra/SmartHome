@@ -54,7 +54,8 @@ namespace Test.Controllers
         {
             WebSecurity.Logout();
             int c = 8;
-            
+            string g = "";
+
             return RedirectToAction("Index", "Home");
         }
 
