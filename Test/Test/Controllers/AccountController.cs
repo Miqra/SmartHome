@@ -53,7 +53,8 @@ namespace Test.Controllers
         public ActionResult LogOff()
         {
             WebSecurity.Logout();
-
+            int c = 8;
+            
             return RedirectToAction("Index", "Home");
         }
 
