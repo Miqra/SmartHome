@@ -1,0 +1,38 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="@Url.Content("~/Content/images/icon-smart-house.png")" rel="shortcut icon" type="image/x-icon" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css/style.css")
+</head>
+
+<body>
+    <header>
+        <div id="Header" >
+            <nav>
+                <ul id="menu">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="Content">
+        @RenderBody()
+    </div>
+    <footer>
+        <div id="Footer">
+         <center> &copy; GeoTek BS @DateTime.Now.Year</center>  
+        </div>
+    </footer>
+ 
+
+</body>
+</html>

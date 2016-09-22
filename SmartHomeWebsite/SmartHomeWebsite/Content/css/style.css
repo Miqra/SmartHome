@@ -1,0 +1,87 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+
+#Header {
+    margin: 5px auto 0 auto;
+    width: 920px;
+    height: 150px;
+    background-color: #26a69a;
+    border-radius: 7px 7px 0 0;
+}
+
+#Content {
+    position: relative;
+    width: 920px;
+    height: 850px;
+    margin: 0 auto;
+    background-color: yellow;
+}
+
+#Footer {
+    margin: 10px auto 0 auto;
+    width: 920px;
+    height: 100px;
+    position: relative;
+    background-color: #26a69a;
+    color: #fff;
+    margin: 0 auto;
+    border-radius: 0 0 7px 7px;
+}
+
+#hexagon {
+    width: 100px;
+    height: 60px;
+    background: #fc5e5e;
+    position: relative;
+    margin: 10px auto;
+}
+
+    #hexagon:before {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: -25px;
+        left: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 25px solid #fc5e5e;
+    }
+
+    #hexagon:after {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        bottom: -25px;
+        left: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-top: 25px solid #fc5e5e;
+    }
+
+#pentagon {
+    width: 54px;
+    position: relative;
+    border-width: 50px 18px 0;
+    border-style: solid;
+    border-color: #277bab transparent;
+}
+
+    #pentagon:before {
+        content: &amp;
+        quot;
+        &amp;
+        quot;
+        ;
+        height: 0;
+        width: 0;
+        position: absolute;
+        top: -85px;
+        left: -18px;
+        border-width: 0 45px 35px;
+        border-style: solid;
+        border-color: transparent transparent #277bab;
+    }
