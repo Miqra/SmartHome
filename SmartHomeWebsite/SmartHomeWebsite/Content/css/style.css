@@ -1,6 +1,7 @@
 ﻿body {
     margin: 0;
     padding: 0;
+    background-color: #36465D;
 }
 
 #Header {
@@ -12,17 +13,35 @@
 }
 
 #Content {
+    width: auto;
+    background-color: #36465D;
     position: relative;
-    width: 920px;
-    height: 850px;
-    margin: 0 auto;
-    background-color: yellow;
 }
+
+.Menu {
+    margin: auto;
+    background-color: #303d4f;
+    height:400px;
+    width: 920px;
+    margin-top: 50px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.Boxes {
+    width: 130px;
+    height: 130px;
+    background-color: #36465D;
+    margin-left:40px;
+    margin-top:40px;
+    border-radius:50%;
+}
+
+
 
 #Footer {
     margin: 10px auto 0 auto;
     width: 920px;
-    height: 100px;
+    height: 75px;
     position: relative;
     background-color: #26a69a;
     color: #fff;
