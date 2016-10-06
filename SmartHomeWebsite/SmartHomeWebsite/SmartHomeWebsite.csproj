@@ -152,6 +152,7 @@
     <Content Include="Content\images\png\Thermometer Automation Filled-100.png" />
     <Content Include="Content\images\png\Thermometer Automation-100.png" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-3.1.1.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -166,7 +167,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Scripts\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

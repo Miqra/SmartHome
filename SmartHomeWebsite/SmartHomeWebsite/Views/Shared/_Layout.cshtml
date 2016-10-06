@@ -9,6 +9,8 @@
     <link href="@Url.Content("~/Content/images/icon-smart-house.png")" rel="shortcut icon" type="image/x-icon" />
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css/style.css")
+    @Scripts.Render("~/bundles/jquery")
+   
 </head>
 
 <body>
@@ -22,4 +24,23 @@
  
 
 </body>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.switch').click(function () {
+
+            $(this).toggleClass("switchOn")
+
+        })
+    });
+
+
+   
+
+</script>
+<script>
+
+
+</script>
 </html>
