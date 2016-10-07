@@ -130,7 +130,9 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="Content\css\style.css" />
+    <Content Include="Content\images\Home Filled-100.png" />
     <Content Include="Content\images\icon-smart-house.png" />
+    <Content Include="Content\images\logosh.png" />
     <Content Include="Content\images\png\Camera Automation Filled-100.png" />
     <Content Include="Content\images\png\computer.png" />
     <Content Include="Content\images\png\console.png" />
@@ -144,11 +146,14 @@
     <Content Include="Content\images\png\Light Automation Filled-100.png" />
     <Content Include="Content\images\png\Light Automation-100.png" />
     <Content Include="Content\images\png\Office Phone Filled-100.png" />
+    <Content Include="Content\images\png\Password Filled-100.png" />
     <Content Include="Content\images\png\Plumbing Filled-100 %281%29.png" />
     <Content Include="Content\images\png\Plumbing Filled-100.png" />
     <Content Include="Content\images\png\Plumbing-100.png" />
+    <Content Include="Content\images\png\Rain Filled-100.png" />
     <Content Include="Content\images\png\Secured by Alarm System Filled-100.png" />
     <Content Include="Content\images\png\Shield Filled-100.png" />
+    <Content Include="Content\images\png\System Task Filled-100.png" />
     <Content Include="Content\images\png\Thermometer Automation Filled-100.png" />
     <Content Include="Content\images\png\Thermometer Automation-100.png" />
     <Content Include="Global.asax" />
