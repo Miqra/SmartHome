@@ -14,6 +14,9 @@ namespace SmartHomeWebsite.App_Start
 
             bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/style.css"));
 
+            bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
+                        "~/Scripts/jquery-3.1.1.js"));
+
         }
     }
 }
