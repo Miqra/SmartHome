@@ -14,16 +14,27 @@
 </head>
 
 <body>
-    <div id="Header">
-        <h1 style="color:#fff;  position:absolute;margin:auto; margin-left:210px; font-family:Georgia;"><center><img src="@Url.Content("~/Content/images/Home Filled-100.png")" style="width:50px;height:40px; padding-right:3px;" /><strong>Smart Home Systems</strong></center></h1>
-
-    </div>
+  
        
-   
+   <div class="nav">
+       <nav>
+           <ul class="ulmenu" >
+               <li class="submenu"><a href="#">Ana səhifə</a></li>
+               <li class="submenu"><a href="#">Qalereya</a></li>
+               <li class="submenu"><a href="#">Əməliyyatlar</a></li>
+               <li class="submenu"><a href="#">Otaqlar</a></li>
+            
+
+               <li class="submenu"><a href="#">Əlaqə</a></li>
+               <li class="submenu"><a href="#">Haqqinda</a></li>
+               <li class="submenu"><a href="#">Konfiqurasiyalar</a></li>
+           </ul>
+       </nav>
+   </div>
     <div id="Content">
       @RenderBody()
     </div>
-    <div id="Footer"><center ><strong style="font-family:Georgia; ">&copy; @DateTime.Now.Year GeoTek BS MMC</strong></center> </div>
+    <div id="Footer" ><center ><text > &copy; @DateTime.Now.Year GeoTek BS MMC</text></center> </div>
  
 
 </body>
@@ -42,8 +53,5 @@
    
 
 </script>
-<script>
 
-
-</script>
 </html>
