@@ -14,12 +14,19 @@
 </head>
 
 <body>
-  
+    <div id="Header">
+        <div class="logo">
+            <img style="width:350px;height:70px; margin-top:20px;" src="@Url.Content("~/Content/images/HAE logo CMYK.png")"/>
+        </div>
+
+
+    </div>
        
    <div class="nav">
        <nav>
            <ul class="ulmenu" >
-               <li class="submenu"><a href="#">Ana səhifə</a></li>
+              
+               <li class="submenu"><a href="#"><img src="@Url.Content("~/Content/images/Home Filled-100.png")" style="width:40px;height:35px; margin-top:-11px; padding:3px;float:left; margin-right:3px;" alt="">Ana səhifə</a></li>
                <li class="submenu"><a href="#">Qalereya</a></li>
                <li class="submenu"><a href="#">Əməliyyatlar</a></li>
                <li class="submenu"><a href="#">Otaqlar</a></li>
@@ -44,7 +51,7 @@
     $(document).ready(function () {
         $('.switch').click(function () {
 
-            $(this).toggleClass("switchOn")
+            $(this).toggleClass("switchOn");
 
         })
     });
