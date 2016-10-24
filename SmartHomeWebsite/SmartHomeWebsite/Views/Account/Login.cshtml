@@ -1,0 +1,46 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    @Styles.Render("~/Content/bootstrapcss")
+    @Styles.Render("~/Content/css/style.css")
+    @Scripts.Render("~/bundles/bootstrap.js")
+</head>
+<body>
+  
+        <div class="divLogin">
+            @using (Html.BeginForm("Login", "Account", FormMethod.Post))
+            {
+                <h3><center>Home Center</center></h3>
+                <table cellpadding="5" cellspacing="5">
+                    <tr>
+                        <td><input type="text" name="name" placeholder="İstifadəçi adı" class="inputLogin" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="password" name="password" placeholder="Şifrə" class="inputLogin" /></td>
+                    </tr>
+                    <tr>
+
+                        <td>
+                            <input type="submit" value="Daxil ol" class="btnLogin" />
+                        </td>
+                    </tr>
+
+                    <tr>
+
+                        <td>@Html.ActionLink("Şifrəni unutmusunuz?", "Index", "Home", "Home", new { @class = "forgotPass" })</td>
+
+                    </tr>
+                </table>
+            }
+
+        </div>
+    
+</body>
+</html>
