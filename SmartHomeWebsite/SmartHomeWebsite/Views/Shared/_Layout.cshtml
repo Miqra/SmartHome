@@ -51,13 +51,23 @@
     $(document).ready(function () {
         $('.switch').click(function () {
 
+
             $(this).toggleClass("switchOn");
+
+            if ($('.switch').hasClass("switchOn"))
+            {
+                $.ajax({
+                    //url: $(this).attr("href"),
+                    url: "Home/SendData",
+                    type: "POST"
+                });
+            }
 
         })
     });
 
 
-   
+
 
 </script>
 

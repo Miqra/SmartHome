@@ -4,6 +4,60 @@
     background-color: #36465D;
 }
 
+.divLogin {
+    margin: auto;
+    margin-top: 240px;
+    width: 300px;
+    height: 300px;
+}
+
+.tableLogin {
+    margin-left: 500px;
+}
+
+.inputLogin {
+    border-radius: 2px;
+    margin: 6px;
+    width: 250px;
+    height: 33px;
+    border: none;
+    padding: 5px;
+}
+
+h3 {
+    color: #ffffff;
+    font-family: Georgia;
+    float: left;
+    margin-left: 55px;
+}
+
+.btnLogin {
+    border-radius: 2px;
+    margin: 6px;
+    height: 30px;
+    width: 250px;
+    border: none;
+    background-color: #529ecc;
+    color: #ffffff;
+    line-height: 1.4;
+    font-family: Helvetica Neue,HelveticaNeue,Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    font-size: 14px;
+    font-style: normal;
+}
+
+    .btnLogin:hover {
+        background-color: #7ec6f2;
+    }
+
+.forgotPass {
+    font-size: 15px;
+    margin-left: 8px;
+    font-family: Georgia;
+}
+
+
+
 #Header {
     margin: 5px auto 0 auto;
     width: 920px;
@@ -14,9 +68,9 @@
 
 .logo {
     float: left;
-    width:150px;
-    height:100px;
-    margin:5px 0px 0 8px;
+    width: 150px;
+    height: 100px;
+    margin: 5px 0px 0 8px;
 }
 
 .nav {
