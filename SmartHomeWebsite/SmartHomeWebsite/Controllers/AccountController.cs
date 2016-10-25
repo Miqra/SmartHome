@@ -12,7 +12,6 @@ namespace SmartHomeWebsite.Controllers
         // GET: /Account/
         Crypto Crypt = new Crypto();
         public ActionResult Login()
-        
         {
             if (Request.RequestType == "POST")
             {

@@ -16,21 +16,30 @@ namespace SmartHomeWebsite.Controllers
         [HttpGet]
         public ActionResult Index(string usr, string pwd)
         {
-            if (usr == "ismayil" && Crypto.DeCrypt(pwd) == "123")
+            var username = System.Web.HttpContext.Current.Session["Username"];
+            var password = System.Web.HttpContext.Current.Session["Password"];
+            if (username != "" && password != "")
             {
+                return View();
+            }
+            else if (usr == "ismayil" && Crypto.DeCrypt(pwd) == "123")
+            {
+                this.Session["Username"] = usr;
+                this.Session["Password"] = "123";
                 return View();
             }
             return RedirectToAction("Login", "Account", "Login");
         }
         [HttpPost]
-        public EmptyResult SendData()
+        public JsonResult SendData(string text,string text2)
         {
+           
             UdpClient udpClient = new UdpClient();
             IPAddress ip = IPAddress.Parse("192.168.0.1");
             IPEndPoint ipEndPoint = new IPEndPoint(ip, 2050);
-            byte[] content = new byte[2] { 1, 1 };
+            byte[] content = new byte[2] {Convert.ToByte(text), Convert.ToByte(text2) };
             int count = udpClient.Send(content, content.Length, ipEndPoint);
-            return new EmptyResult();
+            return Json(count, JsonRequestBehavior.AllowGet);
         }
 
 
