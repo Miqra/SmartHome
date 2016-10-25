@@ -51,17 +51,34 @@
     $(document).ready(function () {
         $('.switch').click(function () {
 
-
             $(this).toggleClass("switchOn");
-
-            if ($('.switch').hasClass("switchOn"))
+           
+            var id = $(this).attr("id");
+        
+            if ($(this).hasClass("switchOn"))
             {
                 $.ajax({
-                    //url: $(this).attr("href"),
-                    url: "Home/SendData",
-                    type: "POST"
+                    url:'/Home/SendData',
+                    contentType: "application/json; charset=utf-8",
+                    dataType: 'json',
+                    type: 'POST',
+                    data: JSON.stringify({ text: id, text2: "1" }),
+                    cache:false 
+                 
                 });
             }
+            else {
+                $.ajax({
+                    url: '/Home/SendData',
+                    contentType: "application/json; charset=utf-8",
+                    dataType: 'json',
+                    type: 'POST',
+                    data: JSON.stringify({ text: id, text2:"0" }),
+                    cache: false
+                });
+
+            }
+
 
         })
     });
