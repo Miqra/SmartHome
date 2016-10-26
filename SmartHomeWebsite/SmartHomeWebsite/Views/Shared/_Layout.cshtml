@@ -54,8 +54,9 @@
             $(this).toggleClass("switchOn");
            
             var id = $(this).attr("id");
-        
-            if ($(this).hasClass("switchOn"))
+          
+            var s = ("#").concat(id);
+            if ($(s).hasClass("switchOn"))
             {
                 $.ajax({
                     url:'/Home/SendData',
