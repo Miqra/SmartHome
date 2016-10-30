@@ -19,7 +19,7 @@ namespace SmartHomeWebsite.App_Start
                         "~/Scripts/jquery-1.9.1.intellisense.js",
                         "~/Scripts/jquery-1.9.1.min.js",
                         "~/Scripts/jquery-1.9.1.js",
-                        "~/Scripts/"));
+                        "~/Scripts/responsive-nav.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrapjs").Include(
                         "~/Scripts/bootstrap.js",

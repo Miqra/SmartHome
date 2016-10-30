@@ -1,4 +1,4 @@
-﻿
+﻿@using SmartHomeWebsite.Models;
 <!DOCTYPE html>
 
 <html>
@@ -9,6 +9,8 @@
     <link href="@Url.Content("~/Content/images/icon-smart-house.png")" rel="shortcut icon" type="image/x-icon" />
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css/style.css")
+    @Styles.Render("~/Content/css/responsive-nav.css")
+
     @Scripts.Render("~/bundles/jquery")
    
 </head>
@@ -18,7 +20,13 @@
         <div class="logo">
             <img style="width:350px;height:70px; margin-top:20px;" src="@Url.Content("~/Content/images/HAE logo CMYK.png")"/>
         </div>
-
+        @{ 
+            var user = Session["user"] as User;
+        }
+      @if (user!=null)
+      {
+        <span  class="Logout" style="float:right; margin-right:25px;margin-top:10px; border:1px solid #fff; padding:5px;" >@Html.ActionLink("Çıxış", "Logout", "Account")</span>
+      }
 
     </div>
        
@@ -31,7 +39,6 @@
                <li class="submenu"><a href="#">Əməliyyatlar</a></li>
                <li class="submenu"><a href="#">Otaqlar</a></li>
             
-
                <li class="submenu"><a href="#">Əlaqə</a></li>
                <li class="submenu"><a href="#">Haqqinda</a></li>
                <li class="submenu"><a href="#">Konfiqurasiyalar</a></li>
@@ -41,7 +48,7 @@
     <div id="Content">
       @RenderBody()
     </div>
-    <div id="Footer" ><center ><text > &copy; @DateTime.Now.Year GeoTek BS MMC</text></center> </div>
+    <div id="Footer" class="" ><center ><text > &copy; @DateTime.Now.Year GeoTek BS MMC</text></center> </div>
  
 
 </body>

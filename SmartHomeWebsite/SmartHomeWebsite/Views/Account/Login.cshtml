@@ -12,15 +12,17 @@
     @Styles.Render("~/Content/css/style.css")
     @Scripts.Render("~/bundles/bootstrap.js")
 </head>
-<body>
-  
-        <div class="divLogin">
+<body">
+
+    <div class="divLogin">
+        <fieldset >
+        
             @using (Html.BeginForm("Login", "Account", FormMethod.Post))
             {
-                <h3><center>Home Center</center></h3>
+
                 <table cellpadding="5" cellspacing="5">
                     <tr>
-                        <td><input type="text" name="name" placeholder="İstifadəçi adı" class="inputLogin" /></td>
+                        <td><input type="text" name="username" placeholder="İstifadəçi adı" class="inputLogin" /></td>
                     </tr>
                     <tr>
                         <td><input type="password" name="password" placeholder="Şifrə" class="inputLogin" /></td>
@@ -39,8 +41,9 @@
                     </tr>
                 </table>
             }
+        </fieldset>
+    </div>
 
-        </div>
-    
+
 </body>
 </html>
